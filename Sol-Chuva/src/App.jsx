@@ -16,8 +16,14 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='app'>
+      <div className="primeira">
+      <p>☀️</p>
+      <div className="coluna">
       <h1>Sol Chuva</h1>
+      <p>Tempo certo em qualquer lugar</p>
+      </div>
+      </div>
 
       <input
         value={busca}
