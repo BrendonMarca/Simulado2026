@@ -19,5 +19,14 @@ export const codigosWmo = [
   { codigo: 82, descricao: "Pancadas de chuva intensas", icone: "🌧️" },
   { codigo: 95, descricao: "Tempestade", icone: "⛈️" },
   { codigo: 96, descricao: "Tempestade com granizo leve", icone: "⛈️" },
-  { codigo: 99, descricao: "Tempestade com granizo intenso", icone: "⛈️" }
-]
+  { codigo: 99, descricao: "Tempestade com granizo intenso", icone: "⛈️" },
+];
+
+export function getInfoClima(codigo) {
+  return (
+    codigosWmo.find((item) => item.codigo === codigo) || {
+      descricao: "Desconhecido",
+      icone: "❓",
+    }
+  );
+}
