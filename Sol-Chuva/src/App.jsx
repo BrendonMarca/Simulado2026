@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { dadosClima } from './dadosClima'
 import { codigosWmo } from './codigosWmo'
 
+
+
 function App() {
   const [busca, setBusca] = useState('')
   const [cidade, setCidade] = useState(null)
@@ -18,10 +20,10 @@ function App() {
   return (
     <div className='app'>
       <div className="primeira">
-      <p>☀️</p>
+    <img className='Logo' src="./solchuva.svg" alt="" />
       <div className="coluna">
       <h1>Sol Chuva</h1>
-      <p>Tempo certo em qualquer lugar</p>
+      <p>Tempo certo</p>
       </div>
       </div>
 
